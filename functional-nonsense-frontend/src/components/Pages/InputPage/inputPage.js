@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function InputForm() {
+export default function InputPage() {
   return (
     <section>
     <div>
