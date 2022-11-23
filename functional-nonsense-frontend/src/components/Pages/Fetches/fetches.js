@@ -15,7 +15,11 @@ export function GetUsers({id}) {
 
   return (
     <div className="users-viewer">
-      <p> {users.sexuality} </p>  
+      <p> Learning Style: {users.learning_style} </p>
+      <p> Myers-Briggs Personality: {users.mb_personality} </p>
+      <p> Religion: {users.religion} </p>
+      <p> Sexuality: {users.sexuality} </p>
+      <p> Hobby: {users.hobby} </p>
     </div>
   )
 }
