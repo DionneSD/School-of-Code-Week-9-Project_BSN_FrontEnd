@@ -12,7 +12,7 @@ function App() {
     <NavBar />
     <Routes>
         {/* ignore the following squiggly line */}
-        <Route exact path='/' exact element={<LandingPage/>} />
+        <Route exact path='/' element={<LandingPage/>} />
         <Route path='/join' element={<InputPage/>} />
         <Route path='/database' element={<DatabasePage/>} />
     </Routes>
