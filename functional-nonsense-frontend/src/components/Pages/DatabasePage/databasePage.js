@@ -1,26 +1,27 @@
 import React from 'react'
-import { useState } from 'react';
-
-
+// import { useState, useEffect } from 'react';
+import GetUsers from "../Fetches/fetches.js";
 
 export default function DatabasePage() {
 
-const [allUsers, setAllUsers] = useState([])
+// const [allUsers, setAllUsers] = useState([])
 
-const getAllUsers = async () => {
-  const response = await fetch ('http://localhost:3001/api/users',{method: "GET"});
-  const data = await response.json()
-  console.log(data)
-  setAllUsers(data)
-}
-getAllUsers();
+// const getAllUsers = async () => {
+//   const response = await fetch ('http://localhost:3001/api/users',{method: "GET"});
+//   const data = await response.json()
+//   console.log(data)
+//   setAllUsers(data)
+// }
+// getAllUsers();
 
-  return (
+
+return (
     <div>
       <h1>DatabasePage</h1>
       <div className="databaseResults">
-    <h3>{setAllUsers.map(()=> {
-      return <p>{setAllUsers.data}</p>})}</h3>
+      <GetUsers id={1} />
+        {/* <h3>{setAllUsers.map(()=> {
+      return <p>{setAllUsers.data}</p>})}</h3> */}
         {/* <ol>
           <li>Id</li>
           <li>Name</li>
@@ -44,4 +45,4 @@ getAllUsers();
       </div>
     </div>
   )
-}
+};
