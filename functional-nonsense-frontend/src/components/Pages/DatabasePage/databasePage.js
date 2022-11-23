@@ -1,11 +1,27 @@
 import React from 'react'
+import { useState } from 'react';
+
+
 
 export default function DatabasePage() {
+
+const [allUsers, setAllUsers] = useState([])
+
+const getAllUsers = async () => {
+  const response = await fetch ('http://localhost:3001/api/users',{method: "GET"});
+  const data = await response.json()
+  console.log(data)
+  setAllUsers(data)
+}
+getAllUsers();
+
   return (
     <div>
       <h1>DatabasePage</h1>
       <div className="databaseResults">
-        <ol>
+    <h3>{setAllUsers.map(()=> {
+      return <p>{setAllUsers.data}</p>})}</h3>
+        {/* <ol>
           <li>Id</li>
           <li>Name</li>
           <li>Learning Style</li>
@@ -20,7 +36,7 @@ export default function DatabasePage() {
           <li>Facebook</li>
           <li>Slack</li>
           <li>Email</li>
-        </ol>
+        </ol> */}
       </div>
       <div className="nextStep-buttons">
         <button>Join Community</button>
