@@ -1,11 +1,23 @@
 import React from 'react'
 
+const { query } = require ("./databaseLink.js")
+
+async function GetUsers(){
+    const usersArray = await query ("SELECT * FROM users;");
+    return usersArray.rows;
+}
+
 export default function DatabasePage() {
   return (
     <div>
       <h1>DatabasePage</h1>
       <div className="databaseResults">
-        <ol>
+      <GetUsers/>
+      </div>
+      <div className="nextStep-buttons">
+        <button>Join Community</button>
+        
+        {/* <ol>
           <li>Id</li>
           <li>Name</li>
           <li>Learning Style</li>
@@ -20,11 +32,7 @@ export default function DatabasePage() {
           <li>Facebook</li>
           <li>Slack</li>
           <li>Email</li>
-        </ol>
-      </div>
-      <div className="nextStep-buttons">
-        <button>Join Community</button>
-        
+        </ol> */}
       </div>
     </div>
   )
