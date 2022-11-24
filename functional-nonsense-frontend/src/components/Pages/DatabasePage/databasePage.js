@@ -31,24 +31,15 @@ const [allContacts, setAllContacts] = useState([])
       <h1 className='h1Bootcamper'>Bootcamper Database:</h1>
         <div className="databaseResults">
           <table className='content-table'>
-            <thead>
+            
               <tr>
                 <th>Name</th>
                 <th>Twitter</th>
                 <th>Linkedin</th>
                 <th>Facebook</th>
-                
+                <th>Slack</th>
                 <th>Email</th>
-                <th>Learning Style</th>
-                <th>Myers-Brigs Personality</th>
-                <th>Religion</th>
-                <th>Cultural Background</th>
-                <th>Gender Identity</th>
-                <th>Sexuality</th>
-                <th>Hobby</th>
               </tr>
-            </thead>
-            <tbody>
           
                 {allContacts.map((contact, i)=> {
                   return<tr key={i}>
@@ -60,28 +51,28 @@ const [allContacts, setAllContacts] = useState([])
                     <td>{contact.email}</td>
                     </tr>
                   })}
-               
-                  {/* {allContacts.map((contact, i)=> {return <li key={i}>{contact.twitter}</li>})}
-                </td>
-                <td>
-                  {allContacts.map((contact, i)=> {return <li key={i}>{contact.linked_in}</li>})}
-                </td>
-                <td>
-                  {allContacts.map((contact, i)=> {return <li key={i}>{contact.facebook}</li>})}
-                </td>
-                {/* <td>
-                  {allContacts.map((contact, i)=> {return <li key={i}>{contact.slack}</li>})}
-                </td> */}
-                {/* <td>{allContacts.map((contact, i)=> {return <li key={i}>{contact.email}</li>})}
-                </td>
-                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.learning_style}</li>})}</td>
-                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.mb_personality}</li>})}</td>
-                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.religion}</li>})}</td>
-                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.cultural_background}</li>})}</td>
-                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.gender_id}</li>})}</td>
-                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.sexuality}</li>})}</td>
-                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.hobby}</li>})}</td> */}
-            </tbody>
+</table>
+<table className='users-table'>
+<tr>
+                <th>Learning Style</th>
+                <th>Myers-Brigs Personality</th>
+                <th>Religion</th>
+                <th>Cultural Background</th>
+                <th>Gender Identity</th>
+                <th>Sexuality</th>
+                <th>Hobby</th>
+              </tr>
+                  {allUsers.map((user, i)=> {
+                  return<tr key={i}>
+                    <td>{user.learning_style}</td>
+                    <td>{user.religion}</td>
+                    <td>{user.mb_personality}</td>
+                    <td>{user.cultural_background}</td>
+                    <td>{user.gender_id}</td>
+                    <td>{user.sexuality}</td>
+                    <td>{user.hobby}</td>
+                    </tr>
+                  })}
           </table>  
      </div>  
     </div>
