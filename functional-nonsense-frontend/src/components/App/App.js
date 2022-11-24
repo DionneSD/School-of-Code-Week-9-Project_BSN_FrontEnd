@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
     <Router>
-    <NavBar />
+    <NavBar/>
     <Routes>
         {/* ignore the following squiggly line */}
         <Route exact path='/' element={<LandingPage/>} />

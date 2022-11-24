@@ -1,0 +1,10 @@
+html {
+    background-color: #1874d2;
+    font-family: trebuchet;
+    font-weight: 400;
+    text-align: center;
+}
+
+form {
+    display: flex;
+}
