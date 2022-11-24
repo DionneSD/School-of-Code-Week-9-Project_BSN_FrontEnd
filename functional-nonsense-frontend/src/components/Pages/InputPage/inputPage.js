@@ -1,30 +1,46 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
+
 export default function InputPage() {
-  const [contact, setContact] = useState([{},{},{}]);
-  function handleChange(event){
-    const newText = event.target.value;
-    setContact(newText);
-  }
-  function handleClick(){
-    // submit all the text into the database
-    setText("");
+
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+
+
+const handleFormSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+        name: name,
+        email: email
+    }
+    console.log(data);
+    fetch ('http://localhost:3001/contacts', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
 }
-  /*
-Plan: take the inputted text and add it to the database
-*/
+
+const handleNameChange = (e) => {
+    setName(e.target.value);
+}
+
+const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+}
+
+
   return (
     <section>
     <div>
       <h2>input form title here</h2>
       <form className="contact-details">
       <h3>enter your contact details below</h3>
-      <input type="text" value={text} onChange={handleChange} id="name" placeholder="what's your name?"></input>
-      {/* <input id="twitter" placeholder="twitter here"></input>
-      <input id="linked-in" placeholder="linked-in here"></input>
-      <input id="facebook" placeholder="facebook here"></input>
-      <input id="slack" placeholder="slack here"></input>
-      <input id="email" placeholder="email here"></input> */}
+      <input type="text" value={name} onChange={handleNameChange} id="name" placeholder="what's your name?"></input>
+      <input type="twitter" id="twitter" placeholder="twitter handle"></input>
+      <input type="email" value={email} onChange={handleEmailChange} id="email" placeholder="what's your email?"></input>
       </form>
       <form className="users">
       <h3>tell us about you below </h3>
@@ -38,8 +54,9 @@ Plan: take the inputted text and add it to the database
       </form>
     </div>
     <div>
-      <button className="button" id="submit" onClick={handleClick}>submit</button>
+      <button className="button" id="submit" onClick={handleFormSubmit}>submit</button>
     </div>
     </section>
   )
+
 };
