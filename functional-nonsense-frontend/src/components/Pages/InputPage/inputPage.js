@@ -19,7 +19,7 @@ const [hobby, setHobby] = useState('');
 
 
 // submit button functions here:
-const handleContactsSubmit = (e) => {
+const handleContactsSubmit = () => {
    const data = {
         name: name,
         twitter: twitter,
@@ -38,8 +38,8 @@ const handleContactsSubmit = (e) => {
     })
 }
 
-const handleUsersSubmit = (e) => {
-  const data = {
+const handleUsersSubmit = () => {
+  const user = {
       learningStyle: learningStyle,
       mbPersonality: mbPersonality,
       religion: religion,
@@ -48,13 +48,13 @@ const handleUsersSubmit = (e) => {
       sexuality: sexuality,
       hobby: hobby
   }
-  console.log(data);
+  console.log(user);
   fetch ('http://localhost:3001/users', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify(user)
   })
 }
 
