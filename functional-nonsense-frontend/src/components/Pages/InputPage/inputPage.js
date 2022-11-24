@@ -18,7 +18,7 @@ const [genderId, setGenderId] = useState('');
 const [sexuality, setSexuality] = useState('');
 const [hobby, setHobby] = useState('');
 
-
+console.log(mbPersonality);
 // submit button functions here:
 const handleContactsSubmit = () => {
    const data = {
@@ -129,7 +129,14 @@ return (
     <form className="users">
     <h3>tell us about you</h3>
     <input type="text" value={learningStyle} onChange={handleLearningStyleChange} id="learning-style" placeholder="learning style?"></input>
-    <input type="text" value={mbPersonality} onChange={handlembPersonalityChange} id="mb-personality" placeholder="myers-briggs personality type?"></input>
+    <label for="myers-briggs-personality">myers-briggs personality:</label>
+    <select name="mb-personality" onChange={handlembPersonalityChange} id="mb-personality">
+      <option value="ENFP">ENFP</option>
+      <option value="INFP">INFP</option>
+      <option value="INTJ">INTJ</option>
+    </select>
+{/*    
+    <input type="text" value={mbPersonality} onChange={handlembPersonalityChange} id="mb-personality" placeholder="myers-briggs personality type?"></input> */}
     <input type="text" value={religion} onChange={handleReligionChange} id="religion" placeholder="what's your religion?"></input>
     <input type="text" value={culturalBackground} onChange={handleCulturalBackgroundChange} id="cultural-background" placeholder="cultural backgroud?"></input>
     <input type="text" value={genderId} onChange={handleGenderIdChange} id="gender-id" placeholder="gender identity?"></input>
