@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./inputPage.css";
 
 export default function InputPage() {
 
@@ -117,9 +118,9 @@ const handleHobbyChange = (e) => {
   return (
     <section>
     <div>
-      <h2>input form title here</h2>
+      <h1 className="h1">join our community</h1>
       <form className="contact-details">
-      <h3>enter your contact details below</h3>
+      <h3>enter your contact details</h3>
       <input type="text" value={name} onChange={handleNameChange} id="name" placeholder="what's your name?"></input>
       <input type="text" value={twitter} onChange={handleTwitterChange} id="twitter" placeholder="twitter handle"></input>
       <input type="text" value={linkedIn} onChange={handleLinkedInChange} id="linked-in" placeholder="linked-in profile"></input>
@@ -128,7 +129,7 @@ const handleHobbyChange = (e) => {
       <input type="text" value={email} onChange={handleEmailChange} id="email" placeholder="email"></input>
       </form>
       <form className="users">
-      <h3>tell us about you below </h3>
+      <h3>tell us about you</h3>
       <input type="text" value={learningStyle} onChange={handleLearningStyleChange} id="learning-style" placeholder="what's your learning style?"></input>
       <input type="text" value={mbPersonality} onChange={handlembPersonalityChange} id="mb-personality" placeholder="what's your myers-briggs personality type?"></input>
       <input type="text" value={religion} onChange={handleReligionChange} id="religion" placeholder="what's your religion?"></input>
