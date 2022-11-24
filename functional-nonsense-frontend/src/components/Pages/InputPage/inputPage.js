@@ -112,8 +112,6 @@ const handleHobbyChange = (e) => {
   setHobby(e.target.value);
 }
 
-
-
   return (
     <section>
     <div>
