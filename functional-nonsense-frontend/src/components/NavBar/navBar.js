@@ -8,13 +8,13 @@ const NavBar = () => {
       <Nav>
         <NavMenu>
           <NavLink to="/" activeStyle>
-            home
+            Home
           </NavLink>
           <NavLink to="/join" activeStyle>
-            join the community
+            Join the community
           </NavLink>
           <NavLink to="/database" activeStyle>
-            access the database
+            Access the database
           </NavLink>
         </NavMenu>
       </Nav>
