@@ -23,7 +23,7 @@ const handleContactsSubmit = () => {
    const data = {
         name: name,
         twitter: twitter,
-        linkedIn: linkedIn,
+        linked_in: linkedIn,
         facebook: facebook,
         slack: slack,
         email: email
@@ -40,11 +40,11 @@ const handleContactsSubmit = () => {
 
 const handleUsersSubmit = () => {
   const user = {
-      learningStyle: learningStyle,
-      mbPersonality: mbPersonality,
+      learning_style: learningStyle,
+      mb_personality: mbPersonality,
       religion: religion,
-      culturalBackground: culturalBackground,
-      genderId: genderId,
+      cultural_background: culturalBackground,
+      gender_id: genderId,
       sexuality: sexuality,
       hobby: hobby
   }
