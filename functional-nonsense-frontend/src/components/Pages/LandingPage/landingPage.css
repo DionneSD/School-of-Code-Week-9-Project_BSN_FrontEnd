@@ -1,57 +1,43 @@
+:root {
+  --primary-colour: #1e90ff;
+  --seccondary-colour: #FD7F00;
+  --font-color: #040084;
+  --Other-font-colour: #FECC98;
+}
 
+div {
+  line-height: 1.6;
+  display: inline-block;
+}
 
 html {
   height: 100%;
   font-family: "Trebuchet", sans-serif;
-  color: red;
   background: rgb(83, 179, 208);
 }
   
 .image {
-  background-position: center;
-  background-size: cover;
-  padding: 10px;
-  margin: 0;
-}
-
-#image {
   max-inline-size: 50%;
   display: block;
-  height: auto;
-  margin: 0 auto;
+  height: 75%;
+  width: auto;
+  margin: 10px auto 10px auto;
+  position: center;
+  padding: 10px;
 }
 
-.button {
-	box-shadow: 3px 7px 0px 0px #213a8a;
-	background:linear-gradient(to bottom, #c4b120 5%, #f0e138 100%);
-	background-color:#c4b120;
-	border-radius:18px;
-	border:1px solid #193ecf;
-	display:inline-block;
-	cursor:pointer;
-	color:#193ecf;
-	font-family:Trebuchet;
-	font-size:17px;
-    font-weight: 700;
-	padding:7px 25px;
-	text-decoration:none;
-}
-.button:hover {
-	background:linear-gradient(to bottom, #f0e138 5%, #c4b120 100%);
-	background-color:#f0e138;
-    font-weight: 900;
-}
-.button:active {
-	position:relative;
-	top:1px;
-}
-
-#join-community {
-    margin: 100px;
+.header {
+  text-align: center;
+  color: var(--font-color);
+  background-color: var(--seccondary-colour);
+  border-radius: 10px;
 }
 
 .about-box {
   display: block;
   height: auto;
-  margin: auto;
+  margin: 10px 200px 10px 200px;
+  /* padding: 50px; */
+  text-align: left;
 }
+
