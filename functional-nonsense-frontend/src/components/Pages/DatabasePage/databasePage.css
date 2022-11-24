@@ -60,9 +60,7 @@ content.row {
     font-weight: bold;
 }
 
-.content-table th {
-    padding: 12px 15px;
-}
+.content-table th 
 
 
 .content-table td {
