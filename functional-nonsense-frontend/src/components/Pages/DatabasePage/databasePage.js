@@ -30,14 +30,67 @@ const [allContacts, setAllContacts] = useState([])
     <div>
       <h1 className='h1Bootcamper'>Bootcamper Database:</h1>
         <div className="databaseResults">
-          <div className="dataContainer">
-            {allContacts.map((contact, i)=> {return <ol>
-              <li key={i}>Name: {contact.name}</li>
-              <li key={i}>Twitter: {contact.twitter}</li>
-            </ol>  
-            })}
-          </div>
-          <div className="dataContainer">
+          <table className='content-table'>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Twitter</th>
+                <th>Linkedin</th>
+                <th>Facebook</th>
+                
+                <th>Email</th>
+                <th>Learning Style</th>
+                <th>Myers-Brigs Personality</th>
+                <th>Religion</th>
+                <th>Cultural Background</th>
+                <th>Gender Identity</th>
+                <th>Sexuality</th>
+                <th>Hobby</th>
+              </tr>
+            </thead>
+            <tbody>
+          
+                {allContacts.map((contact, i)=> {
+                  return<tr key={i}>
+                    <td>{contact.name}</td>
+                    <td>{contact.twitter}</td>
+                    <td>{contact.linked_in}</td>
+                    <td>{contact.facebook}</td>
+                    <td>{contact.slack}</td>
+                    <td>{contact.email}</td>
+                    </tr>
+                  })}
+               
+                  {/* {allContacts.map((contact, i)=> {return <li key={i}>{contact.twitter}</li>})}
+                </td>
+                <td>
+                  {allContacts.map((contact, i)=> {return <li key={i}>{contact.linked_in}</li>})}
+                </td>
+                <td>
+                  {allContacts.map((contact, i)=> {return <li key={i}>{contact.facebook}</li>})}
+                </td>
+                {/* <td>
+                  {allContacts.map((contact, i)=> {return <li key={i}>{contact.slack}</li>})}
+                </td> */}
+                {/* <td>{allContacts.map((contact, i)=> {return <li key={i}>{contact.email}</li>})}
+                </td>
+                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.learning_style}</li>})}</td>
+                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.mb_personality}</li>})}</td>
+                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.religion}</li>})}</td>
+                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.cultural_background}</li>})}</td>
+                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.gender_id}</li>})}</td>
+                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.sexuality}</li>})}</td>
+                <td>{allUsers.map((user, i)=> {return <li key={i}>{user.hobby}</li>})}</td> */}
+            </tbody>
+          </table>  
+     </div>  
+    </div>
+  )
+}
+
+
+
+{/* <div className="dataContainer">
             {allContacts.map((contact, i)=> {return <li key={i}>Twitter: {contact.twitter}</li>})}
           </div>
           <div className="dataContainer">
@@ -72,8 +125,4 @@ const [allContacts, setAllContacts] = useState([])
           </div>
           <div className="dataContainer">
             {allUsers.map((user, i)=> {return <li key={i}>Hobby: {user.hobby}</li>})}
-          </div>
-      </div>  
-    </div>
-  )
-}
+          </div> */}

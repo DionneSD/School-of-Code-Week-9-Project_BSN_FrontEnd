@@ -9,13 +9,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #040084;
+    color: #FECC98;
     list-style: none;
 }
 
 /* h1 Bootcamper */
 .h1Bootcamper {
     margin: 20px;
+}
+
+/* Content Table */
+
+.content-table {
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-collapse: collapse;
+    min-width: 400px;
+    background-color: #0141CF;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.content-table thead tr {
+    background-color: var(--seccondary-colour);
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #333;
+}
+
+.content-table tbody tr:nth-last-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #1e90ff;
 }
 
 .dataContainer {
