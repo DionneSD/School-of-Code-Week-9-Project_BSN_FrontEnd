@@ -131,7 +131,7 @@ return (
         <h3>Tell us about you</h3>
         <input type="text" value={learningStyle} onChange={handleLearningStyleChange} id="learning-style" placeholder="learning style?"></input>
         <input type="text" value={mbPersonality} onChange={handlembPersonalityChange} id="mb-personality" placeholder="myers-briggs personality type?"></input>
-        <input type="text" value={religion} onChange={handleReligionChange} id="religion" placeholder="what's your religion?"></input>
+        <input type="text" value={religion} onChange={handleReligionChange} id="religion" placeholder="religion?"></input>
         <input type="text" value={culturalBackground} onChange={handleCulturalBackgroundChange} id="cultural-background" placeholder="cultural backgroud?"></input>
         <input type="text" value={genderId} onChange={handleGenderIdChange} id="gender-id" placeholder="gender identity?"></input>
         <input type="text" value={sexuality} onChange={handleSexualityChange} id="sexuality" placeholder="sexuality?"></input>
