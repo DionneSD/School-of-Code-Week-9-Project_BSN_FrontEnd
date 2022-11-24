@@ -1,0 +1,35 @@
+:root {
+    --primary-colour: #1e90ff;
+    --seccondary-colour: #FD7F00;
+    --font-color: #040084;
+    --Other-font-colour: #FECC98;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #040084;
+    list-style: none;
+}
+
+/* h1 Bootcamper */
+.h1Bootcamper {
+    margin: 20px;
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--seccondary-colour); 
+    border: solid 3px var(--primary-colour);
+    height: 7.5vh;
+}
+
+.dataContainer > li {
+    flex-wrap: wrap;
+    color: var(--Other-font-colour);
+}
