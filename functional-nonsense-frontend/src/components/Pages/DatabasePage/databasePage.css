@@ -45,9 +45,6 @@
     border-bottom: 1px solid #333;
 }
 
-.content-table tbody tr:nth-last-of-type(even) {
-    background-color: #f3f3f3;
-}
 
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #1e90ff;
