@@ -1,27 +1,27 @@
 
 
 html {
-    height: 100%;
-    font-family: "Trebuchet", sans-serif;
-    color: red;
-    background: rgb(83, 179, 208);
-  }
+  height: 100%;
+  font-family: "Trebuchet", sans-serif;
+  color: red;
+  background: rgb(83, 179, 208);
+}
   
-  .image {
-    background-position: center;
-    background-size: cover;
-    padding: 10px;
-    margin: 0;
-  }
+.image {
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  margin: 0;
+}
 
-  #image {
-    max-inline-size: 50%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-  }
+#image {
+  max-inline-size: 50%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
 
-  .button {
+.button {
 	box-shadow: 3px 7px 0px 0px #213a8a;
 	background:linear-gradient(to bottom, #c4b120 5%, #f0e138 100%);
 	background-color:#c4b120;
@@ -50,8 +50,8 @@ html {
     margin: 100px;
 }
 
-  .about-box {
-    display: block;
-    height: auto;
-    margin: auto;
-  }
+.about-box {
+  display: block;
+  height: auto;
+  margin: auto;
+}
