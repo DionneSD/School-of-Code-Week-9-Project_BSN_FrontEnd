@@ -38,7 +38,7 @@ padding-Left: 30cm;
 
   align-items:right ;
   justifyContent: flex-end;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     display: none;
   }
 `;

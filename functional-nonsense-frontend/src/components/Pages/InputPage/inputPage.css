@@ -21,6 +21,10 @@
     color: var(--font-color);
     background-color: var(--seccondary-colour);
     border-radius: 5px;
+    width: 80%;
+    margin-left: 5cm;
+    height: 1.5cm;
+    font-size: 2em;
 }
 
 h3 {
