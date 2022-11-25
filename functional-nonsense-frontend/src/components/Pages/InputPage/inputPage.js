@@ -182,13 +182,11 @@ return (
     <select className='inputbox' name="gender-id" onChange={handleGenderIdChange} id="gender-id">
     <option value="" disabled selected>gender identity?</option>
       <option value="agender">agender</option>
-      <option value="cis man">cis man</option>
-      <option value="cis woman">cis woman</option>
+      <option value="man">man</option>
+      <option value="woman">woman</option>
       <option value="genderfluid">genderfluid</option>
       <option value="genderqueer">genderqueer</option>
       <option value="non-binary">non-binary</option>
-      <option value="trans man">trans man</option>
-      <option value="trans woman">trans woman</option>
     </select>
     
     </form>
