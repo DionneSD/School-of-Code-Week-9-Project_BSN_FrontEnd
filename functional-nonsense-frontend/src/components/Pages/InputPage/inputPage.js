@@ -37,7 +37,13 @@ const handleContactsSubmit = () => {
         },
         body: JSON.stringify(data)
     })
-}
+    setName("");
+    setTwitter("");
+    setLinkedIn("");
+    setFacebook("");
+    setSlack("");
+    setEmail("");
+};
 
 const handleUsersSubmit = () => {
   const user = {
@@ -57,7 +63,14 @@ const handleUsersSubmit = () => {
       },
       body: JSON.stringify(user)
   })
-}
+    setLearningStyle("");
+    setMbPersonality("");
+    setReligion("");
+    setCulturalBackground("");
+    setGenderId("");
+    setSexuality("");
+    setHobby("");
+};
 
 //contact-details functions here:
 const handleNameChange = (e) => {
