@@ -130,16 +130,23 @@ return (
     <form className="form-details">
     <h3>tell us about you</h3>
 
-    <label for="learning-style">learning style:</label>
-    <select name="learning-style" onChange={handleLearningStyleChange} id="learning-style">
+
+    <input type="text" value={religion} onChange={handleReligionChange} id="religion" placeholder="religion?"></input>
+    <input type="text" value={culturalBackground} onChange={handleCulturalBackgroundChange} id="cultural-background" placeholder="cultural backgroud?"></input>
+    <input type="text" value={sexuality} onChange={handleSexualityChange} id="sexuality" placeholder="sexuality?"></input>
+    <input type="text" value={hobby} onChange={handleHobbyChange} id="hobby" placeholder="hobby?"></input>
+    <label for="learning-style" ></label>
+    <select className='inputbox' name="learning-style" onChange={handleLearningStyleChange} id="learning-style">
+    <option  value="" disabled selected>learning style?</option>
       <option value="visual">visual</option>
       <option value="audio">audio</option>
       <option value="reading and writing">reading and writing</option>
       <option value="kinesthetic">kinesthetic</option>
     </select>
     
-    <label for="myers-briggs-personality">myers-briggs personality:</label>
-    <select name="mb-personality" onChange={handlembPersonalityChange} id="mb-personality">
+    <label for="myers-briggs-personality"></label>
+    <select className="inputbox" name="mb-personality" onChange={handlembPersonalityChange} id="mb-personality">
+    <option value="" disabled selected>myers-briggs?</option>
       <option value="ISTJ">ISTJ</option>
       <option value="ISTP">ISTP</option>
       <option value="ISFJ">ISFJ</option>
@@ -158,11 +165,9 @@ return (
       <option value="ENTJ">ENTJ</option>
     </select>
 
-    <input type="text" value={religion} onChange={handleReligionChange} id="religion" placeholder="religion?"></input>
-    <input type="text" value={culturalBackground} onChange={handleCulturalBackgroundChange} id="cultural-background" placeholder="cultural backgroud?"></input>
-
-    <label for="gender-id">gender identity:</label>
-    <select name="gender-id" onChange={handleGenderIdChange} id="gender-id">
+    <label for="gender-id"></label>
+    <select className='inputbox' name="gender-id" onChange={handleGenderIdChange} id="gender-id">
+    <option value="" disabled selected>gender identity?</option>
       <option value="agender">agender</option>
       <option value="cis man">cis man</option>
       <option value="cis woman">cis woman</option>
@@ -173,8 +178,6 @@ return (
       <option value="trans woman">trans woman</option>
     </select>
     
-    <input type="text" value={sexuality} onChange={handleSexualityChange} id="sexuality" placeholder="sexuality?"></input>
-    <input type="text" value={hobby} onChange={handleHobbyChange} id="hobby" placeholder="hobby?"></input>
     </form>
   </div>
   <div>

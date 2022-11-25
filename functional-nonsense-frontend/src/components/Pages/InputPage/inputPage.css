@@ -27,6 +27,13 @@ h3 {
     color: var(--font-color);
 }
 
+.inputbox {
+    width: 4cm;
+    justify-content: center;
+    font-size: small;
+    color: #333;
+}
+
 section {
     background-color: var(--primary-colour);
     width: 100vw;
@@ -50,7 +57,7 @@ section {
     background-color: var(--seccondary-colour);
     padding: 40px 20px;
     margin: 20px;
-    gap: 20px;
+    gap: 10px;
     width: 25vw;
     border-radius: 5px;
 }
@@ -69,7 +76,7 @@ input {
     width: 100px;
     height: 40px;
     background-color: var(--font-color);
-    color: var(--Other-font-colour);
+    color: var(--seccondary-colour) ;
     font-weight: 900;
     font-size: medium;
     border: none;
@@ -79,6 +86,7 @@ input {
 
 button:hover {
     background-color: var(--seccondary-colour);
+    color: var(--font-color);
     cursor: pointer;
 
 }
