@@ -17,9 +17,8 @@ export default function LandingPage() {
         <br/>
         <p>we encourage you to join our community and provide as much information about yourself as you are comfortable with.</p>
         <br/>
-        <p>as bootcampers ourselves, we know how stressful and intensive these courses can be, and we hope that this site allows you to make connections with people who are going through similar things and enables you to help each other as much as we have been helped by our fellows from bootcamps past and present!</p>
-        <br/>
-        <p>we hope to see you on the social sites and thank you for taking an interest in our little project.</p>
+        <p>as bootcampers ourselves, we know how stressful and intensive these courses can be, and we hope that this site allows you to make connections with people who are going through similar things, and enables you to help each other as much as we have been helped by our fellows from bootcamps past and present!
+        see you on the social sites and thank you for taking an interest in our little project.</p>
         <br/>
         <p><i>and remember: trans rights are human rights - black lives matter - solidarity forever!</i></p>
       </div>

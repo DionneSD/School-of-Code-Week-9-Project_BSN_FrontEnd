@@ -13,13 +13,13 @@ const NavBar = () => {
       </fig>
         <NavMenu>
           <NavLink to="/" activeStyle>
-            Home
+            home
           </NavLink>
           <NavLink to="/join" activeStyle>
-            Join the community
+            join the community
           </NavLink>
           <NavLink to="/database" activeStyle>
-            Access the database
+            access the database
           </NavLink>
         </NavMenu>
       </Nav>
