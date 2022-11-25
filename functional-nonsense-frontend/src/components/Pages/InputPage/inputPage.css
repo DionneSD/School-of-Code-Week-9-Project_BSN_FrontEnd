@@ -39,7 +39,7 @@ h3 {
 }
 
 section {
-    background-color: var(--primary-colour);
+    /* background-color: var(--primary-colour); */
     width: 100vw;
     height: 100vh;
 }
