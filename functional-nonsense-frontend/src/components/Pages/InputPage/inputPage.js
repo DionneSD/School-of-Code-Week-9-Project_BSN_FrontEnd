@@ -178,8 +178,31 @@ return (
   </div>
   <div>
     <button className="button" id="submit" onClick={()=> {handleContactsSubmit(); handleUsersSubmit()}}>submit</button>
+=======
+    <h1 className="h1">Join our community</h1>
+    <div className='input-container'>
+      <form className="form-details">
+        <h3>Enter your contact details</h3>
+        <input type="text" value={name} onChange={handleNameChange} id="name" placeholder="name?"></input>
+        <input type="text" value={twitter} onChange={handleTwitterChange} id="twitter" placeholder="twitter?"></input>
+        <input type="text" value={linkedIn} onChange={handleLinkedInChange} id="linked-in" placeholder="linked-in?"></input>
+        <input type="text" value={facebook} onChange={handleFacebookChange} id="facebook" placeholder="facebook?"></input>
+        <input type="text" value={slack} onChange={handleSlackChange} id="slack" placeholder="slack?"></input>
+        <input type="text" value={email} onChange={handleEmailChange} id="email" placeholder="email?"></input>
+      </form>
+      <form className="form-details">
+        <h3>Tell us about you</h3>
+        <input type="text" value={learningStyle} onChange={handleLearningStyleChange} id="learning-style" placeholder="learning style?"></input>
+        <input type="text" value={mbPersonality} onChange={handlembPersonalityChange} id="mb-personality" placeholder="myers-briggs personality type?"></input>
+        <input type="text" value={religion} onChange={handleReligionChange} id="religion" placeholder="religion?"></input>
+        <input type="text" value={culturalBackground} onChange={handleCulturalBackgroundChange} id="cultural-background" placeholder="cultural backgroud?"></input>
+        <input type="text" value={genderId} onChange={handleGenderIdChange} id="gender-id" placeholder="gender identity?"></input>
+        <input type="text" value={sexuality} onChange={handleSexualityChange} id="sexuality" placeholder="sexuality?"></input>
+        <input type="text" value={hobby} onChange={handleHobbyChange} id="hobby" placeholder="hobby?"></input>
+      </form>
+    </div>
+      <button className="button" id="submit" onClick={()=> {handleContactsSubmit(); handleUsersSubmit()}}>Submit</button>
   </div>
   </section>
 )
-
 };
