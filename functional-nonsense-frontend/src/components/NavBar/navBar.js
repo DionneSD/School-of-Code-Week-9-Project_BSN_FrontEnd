@@ -9,8 +9,8 @@ const NavBar = () => {
     <>
       <Nav>
       <fig>
-    <img className="logo" src={logo} alt="logo" />
-  </fig>
+      <img className="logo" src={logo} alt="logo" />
+      </fig>
         <NavMenu>
           <NavLink to="/" activeStyle>
             Home

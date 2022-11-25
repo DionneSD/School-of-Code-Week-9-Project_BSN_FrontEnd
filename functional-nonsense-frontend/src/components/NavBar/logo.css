@@ -9,3 +9,7 @@
   background-position: center;
   border-radius: 50%;
 } */
+
+.logo {
+  width: fit-content;
+}
