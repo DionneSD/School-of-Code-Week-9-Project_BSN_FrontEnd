@@ -115,9 +115,10 @@ const handleHobbyChange = (e) => {
 
 return (
   <section>
-  <div>
     <h1 className="h1">join our community</h1>
-    <form className="contact-details">
+    <div className='input-container'>
+
+    <form className="form-details">
     <h3>enter your contact details</h3>
     <input type="text" value={name} onChange={handleNameChange} id="name" placeholder="name?"></input>
     <input type="text" value={twitter} onChange={handleTwitterChange} id="twitter" placeholder="twitter?"></input>
@@ -126,7 +127,7 @@ return (
     <input type="text" value={slack} onChange={handleSlackChange} id="slack" placeholder="slack?"></input>
     <input type="text" value={email} onChange={handleEmailChange} id="email" placeholder="email?"></input>
     </form>
-    <form className="users">
+    <form className="form-details">
     <h3>tell us about you</h3>
 
     <label for="learning-style">learning style:</label>
@@ -178,9 +179,8 @@ return (
   </div>
   <div>
     <button className="button" id="submit" onClick={()=> {handleContactsSubmit(); handleUsersSubmit()}}>submit</button>
-=======
-    <h1 className="h1">Join our community</h1>
-    <div className='input-container'>
+
+    {/* <h1 className="h1">Join our community</h1>
       <form className="form-details">
         <h3>Enter your contact details</h3>
         <input type="text" value={name} onChange={handleNameChange} id="name" placeholder="name?"></input>
@@ -201,7 +201,7 @@ return (
         <input type="text" value={hobby} onChange={handleHobbyChange} id="hobby" placeholder="hobby?"></input>
       </form>
     </div>
-      <button className="button" id="submit" onClick={()=> {handleContactsSubmit(); handleUsersSubmit()}}>Submit</button>
+      <button className="button" id="submit" onClick={()=> {handleContactsSubmit(); handleUsersSubmit()}}>Submit</button> */}
   </div>
   </section>
 )

@@ -39,6 +39,7 @@ section {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    justify-content: center;
 }
 
 .form-details {
