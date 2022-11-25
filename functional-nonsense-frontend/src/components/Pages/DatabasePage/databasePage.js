@@ -28,7 +28,7 @@ const [allContacts, setAllContacts] = useState([])
 
   return (
     <div>
-      <h1 className='h1Bootcamper'>Bootcamper Database:</h1>
+      <h1 className='h1Bootcamper'>bootcamper database</h1>
         <div className="databaseResults">
           <table className='content-table'>
             
