@@ -31,11 +31,13 @@ html {
 }
 
 .header {
-  margin: 20px;
   text-align: center;
   color: var(--font-color);
   background-color: var(--seccondary-colour);
   border-radius: 10px;
+}
+h1 {
+  margin: 12px;
 }
 
 .about-box {
