@@ -145,7 +145,7 @@ return (
 
 
     <input type="text" value={religion} onChange={handleReligionChange} id="religion" placeholder="religion?"></input>
-    <input type="text" value={culturalBackground} onChange={handleCulturalBackgroundChange} id="cultural-background" placeholder="cultural backgroud?"></input>
+    <input type="text" value={culturalBackground} onChange={handleCulturalBackgroundChange} id="cultural-background" placeholder="cultural background?"></input>
     <input type="text" value={sexuality} onChange={handleSexualityChange} id="sexuality" placeholder="sexuality?"></input>
     <input type="text" value={hobby} onChange={handleHobbyChange} id="hobby" placeholder="hobby?"></input>
     <label for="learning-style" ></label>
