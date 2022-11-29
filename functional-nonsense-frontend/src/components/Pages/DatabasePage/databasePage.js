@@ -59,7 +59,7 @@ export default function DatabasePage() {
         <table className="users-table">
           <tr>
             <th>learning style</th>
-            <th>myers-brigs personality</th>
+            <th>myers-briggs personality</th>
             <th>religion</th>
             <th>cultural background</th>
             <th>gender identity</th>
@@ -70,8 +70,8 @@ export default function DatabasePage() {
             return (
               <tr key={i}>
                 <td>{user.learning_style}</td>
-                <td>{user.religion}</td>
                 <td>{user.mb_personality}</td>
+                <td>{user.religion}</td>
                 <td>{user.cultural_background}</td>
                 <td>{user.gender_id}</td>
                 <td>{user.sexuality}</td>
