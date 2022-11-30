@@ -119,6 +119,7 @@ function alertUser() {
 }
 
 // return JSX
+//!create input componant and pass props
 return (
     
     <section>
