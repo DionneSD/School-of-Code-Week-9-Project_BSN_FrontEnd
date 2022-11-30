@@ -1,6 +1,8 @@
 import React from 'react';
 import './landingPage.css';
 
+// This is the main page which users will see first. It exports to App.js and from there to the public html page.
+
 export default function LandingPage() {
   return (
     <div id="container">

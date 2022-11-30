@@ -1,3 +1,5 @@
+/* This impacts the whole page */
+
 :root {
   --primary-colour: #1e90ff;
   --seccondary-colour: #FD7F00;
@@ -5,16 +7,19 @@
   --Other-font-colour: #FECC98;
 }
 
+/* This alters the divs */
+
 div {
   line-height: 1.6;
   display: inline-block;
 }
 
+/* This changes the text */
+
 html {
   height: 100%;
   font-family: "Trebuchet", sans-serif;
   background: rgb(83, 179, 208);
-  /* width: 100%; */
 }
 
 /* Div container */
@@ -36,19 +41,25 @@ html {
   background-color: var(--seccondary-colour);
   border-radius: 10px;
 }
+
+/* Changes the way the title displays */
+
 h1 {
   margin: 12px;
 }
+
+/* Applies to the text div about-box */
 
 .about-box {
   display: block;
   height: auto;
   margin: 10px 200px 10px 200px;
   color: var(--font-color);
-  /* padding: 50px; */
   text-align: left;
   width: 50vw;
 }
+
+/* Changes font colour for text in paragraphs and italics */
 
 p, i {
   color: var(--font-color);
