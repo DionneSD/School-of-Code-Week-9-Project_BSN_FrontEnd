@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import "./inputPage.css";
 
+// This function provides user-input information to the back end, and from there to the Elephant SQL database tables.
+
 export default function InputPage() {
 
 const [name, setName] = useState('');
@@ -125,7 +127,7 @@ const handleSexualityChange = (e) => {
 const handleHobbyChange = (e) => {
   setHobby(e.target.value);
 }
-
+// The below section returns the forms and page that are seen by the users
 return (
   <section>
     <h1 className="h1">join our community</h1>

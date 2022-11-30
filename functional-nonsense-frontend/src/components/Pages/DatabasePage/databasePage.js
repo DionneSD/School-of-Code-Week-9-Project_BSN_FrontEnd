@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./databasePage.css";
 
+// This function sends requests to the back end and from there to the Elephant SQL databases for the information they have. They send this request once on loading. A stretch goal is to add search functionality to this page.
+
 export default function DatabasePage() {
   const [allUsers, setAllUsers] = useState([]);
   useEffect(() => {
@@ -28,6 +30,8 @@ export default function DatabasePage() {
     };
     getAllContacts();
   }, []);
+
+// The below return element builds the table that is seen by the viewer when the page loads.
 
   return (
     <div>

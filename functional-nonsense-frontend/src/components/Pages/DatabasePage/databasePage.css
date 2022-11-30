@@ -1,3 +1,5 @@
+/* This element affects the page */
+
 :root {
     --primary-colour: #1e90ff;
     --seccondary-colour: #FD7F00;
@@ -5,6 +7,7 @@
     --Other-font-colour: #FECC98;
 }
 
+/* these elements affect the table  */
 content.row {
     display: flex;
   }
@@ -36,12 +39,11 @@ content.row {
     flex-direction: row;
     width: 100%;
     height: 100%;
-    /* background-color: #040084; */
     width: 60%;
     margin-left: 8cm;
 }
 
-/* h1 Bootcamper */
+/* This element affects the page title */
 .h1Bootcamper {
     margin: 20px;
     background-color: var(--seccondary-colour);
@@ -88,6 +90,7 @@ content.row {
     border-bottom: 2px solid #1e90ff;
 }
 
+/* Users table */
 
 .users-table {
     margin: 25px 0;
@@ -128,17 +131,6 @@ content.row {
     border-bottom: 2px solid #1e90ff;
 }
 
-
-/* .dataContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--seccondary-colour); 
-    border: solid 3px var(--primary-colour);
-    height: 7.5vh;
-} */
 
 .dataContainer > li {
     flex-wrap: wrap;
