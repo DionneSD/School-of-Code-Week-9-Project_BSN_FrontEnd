@@ -50,6 +50,22 @@ function reducer(state, action) {
             return { ...state, sexuality: action.payload };
         case 'hobby':
             return { ...state, hobby: action.payload };
+        case 'reset': 
+            return { 
+                name: '',
+                twitter: '',
+                linkedIn: '',
+                facebook: '',
+                slack: '',
+                email: '',
+                learningStyle: '',
+                mbPersonality: '',
+                religion: '',
+                culturalBackground: '',
+                genderId: '',
+                sexuality: '',
+                hobby: ''
+        }   
         default:
             return state;
     }
@@ -94,12 +110,18 @@ const handleUsersSubmit = () => {
         },
         body: JSON.stringify(user)
     })
-
+    dispatch ({ type: 'reset' })
 };
+
+
+function alertUser() {
+    alert("Thankyou for your submission!");
+}
 
 // return JSX
 return (
-  <section>
+    
+    <section>
     <h1 className="h1">join our community</h1>
     <div className='input-container'>
     <form className="form-details">
@@ -158,7 +180,7 @@ return (
     </form>
   </div>
   <div>
-    <button className="button" id="submit" onClick={()=> {handleContactsSubmit(); handleUsersSubmit()}}>submit</button>
+    <button className="button" id="submit" onClick={()=> {handleContactsSubmit(); handleUsersSubmit(); alertUser()}}>submit</button>
   </div>
   </section>
 );
